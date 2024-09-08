@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Py Restaurant</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Spice Py Restaurant</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Spice Py Restaurant</h1>
+        <p>Your favorite place for delicious meals</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </section>
+
+    <!-- Greeting Section -->
+    <section class="greeting">
+        <h2 id="greeting-message"></h2>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div id="menu-cards" class="menu-cards">
+            <!-- Menu items will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Order Summary Section -->
+    <section class="order-summary">
+        <h3>Your Orders:</h3>
+        <ul id="order-list"></ul>
+        <h3>Total Bill: $<span id="total-bill">0.00</span></h3>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Spice Py Restaurant. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="https://facebook.com">Facebook</a>,
+            <a href="https://twitter.com">Twitter</a>,
+            <a href="https://instagram.com">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Modal for Food Details -->
+    <div id="food-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="modal-food-name"></h2>
+            <p id="modal-food-price"></p>
+            <p id="modal-food-description"></p>
+            <button id="modal-add-to-order" class="btn">Add to Order</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
