@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentTime = new Date().getHours();
 
         if (currentTime >= 18 || currentTime < 6) {
-            greetingMessage.textContent = "Hello sir, Welcome to Spice Py restaurant ❤️ Have a nice night sir! 😊🌙";
+            greetingMessage.textContent = "Hello sir, Welcome to Spice Py restaurant  Have a nice night sir! ";
         } else {
-            greetingMessage.textContent = "Good Morning sir ☀️☁️! Welcome to Spice Py restaurant";
+            greetingMessage.textContent = "Good Morning sir ! Welcome to Spice Py restaurant";
         }
     }
 
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             id: 11,
-            name: "Coffee/Tea",
+            name: "Coffee",
             price: 2.50,
             description: "Freshly brewed coffee or tea.",
             img: 'https://images.unsplash.com/photo-1495774856032-8b90bbb32b32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q29mZmVlJTJGVGVhfGVufDB8fDB8fHww'
